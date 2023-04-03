@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="835.0" prefWidth="507.0" spacing="20.0" style="-fx-background-color: #f3cb3a;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.produitController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane prefHeight="822.0" prefWidth="467.0" style="-fx-background-color: #f3cb3a;">
+         <children>
+            <Button fx:id="deleteP" layoutX="180.0" layoutY="274.0" mnemonicParsing="false" onAction="#onDeleteButtonClickP" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #3a6c66; -fx-border-radius: 50;" text="Delete">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="okP" layoutX="52.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSaveButtonClickP" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #3a6c66;" text="Save">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="mytableP" layoutX="46.0" layoutY="326.0" prefHeight="180.0" prefWidth="376.0">
+               <columns>
+                  <TableColumn fx:id="col_idP" prefWidth="75.0" text="Id" />
+                  <TableColumn fx:id="col_nomP" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="col_prixP" prefWidth="75.0" text="prix" />
+                  <TableColumn fx:id="col_descp" prefWidth="75.0" text="Descreption" />
+               </columns>
+            </TableView>
+            <TextField fx:id="nom" layoutX="175.0" layoutY="115.0" prefHeight="38.0" prefWidth="250.0" promptText="nom" style="-fx-background-color: #f4d04e; -fx-border-radius: 20; -fx-border-color: #3a6c66;" />
+            <TextField fx:id="descreption" layoutX="175.0" layoutY="219.0" prefHeight="38.0" prefWidth="250.0" promptText="descreption.." style="-fx-background-color: #f4d04e; -fx-border-color: #3a6c66; -fx-border-radius: 20;" />
+            <TextField fx:id="prix" layoutX="172.0" layoutY="172.0" prefHeight="38.0" prefWidth="250.0" promptText="prix" style="-fx-background-color: #f4d04e; -fx-border-color: #3a6c66; -fx-border-radius: 20;" />
+            <Label layoutX="69.0" layoutY="181.0" text="Prix :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="124.0" text="Nom :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="228.0" text="Descreption">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="94.0" fitWidth="93.0" layoutX="168.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/prd.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnUpdt" layoutX="297.0" layoutY="273.0" mnemonicParsing="false" onAction="#onUpdateClick" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #3a6c66;" text="Update">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="175.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add products.." wrappingWidth="137.13671875" />
+            <Button fx:id="btnBck" layoutX="17.0" layoutY="524.0" mnemonicParsing="false" onAction="#onbtnBck" prefHeight="50.0" prefWidth="59.0" style="-fx-background-radius: 50; -fx-background-color: #3a6c66;" text="BACK">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="67.0" fitWidth="40.0" layoutX="210.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+
+
+</VBox>

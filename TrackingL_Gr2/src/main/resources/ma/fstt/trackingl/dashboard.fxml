@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="778.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.dashboardController">
+   <children>
+      <Pane opacity="0.8" prefHeight="700.0" prefWidth="898.0" style="-fx-background-color: #f2cc39;">
+         <children>
+            <Button fx:id="livreurBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="25.0" mnemonicParsing="false" onAction="#onLivreurClicked" prefHeight="74.0" prefWidth="691.0" style="-fx-background-color: #3a6c66;" text="Livreurs" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+               </font></Button>
+            <Button fx:id="commandesBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="215.0" mnemonicParsing="false" onAction="#onCommandesClicked" prefHeight="74.0" prefWidth="691.0" style="-fx-background-color: #3a6c66;" text="Commandes">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="produitsBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="123.0" mnemonicParsing="false" onAction="#onProduitsClicked" prefHeight="74.0" prefWidth="691.0" style="-fx-background-color: #3a6c66;" text="Produits">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="deconnecterBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="402.0" mnemonicParsing="false" onAction="#onDeconnecterClicked" prefHeight="74.0" prefWidth="691.0" style="-fx-background-color: #3a6c66;" text="Deconnexion">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="96.0" layoutX="55.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/prd.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="82.0" layoutX="63.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/liv.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="88.0" fitWidth="100.0" layoutX="55.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/commande.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="82.0" fitWidth="74.0" layoutX="59.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/deconnect.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="dashboardButton" onAction="#onDashboardClicked" layoutX="30.0" layoutY="303.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="691.0" style="-fx-background-color: #3a6c66;" text="Dashboard">
+               <font>
+                  <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="91.0" fitWidth="74.0" layoutX="59.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../pics/dashboard.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Pane>
+   </children>
+
+</VBox>

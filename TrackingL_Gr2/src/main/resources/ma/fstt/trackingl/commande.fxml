@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="882.0" prefWidth="793.0" style="-fx-background-color: #f4d04e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.CommandeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Pane prefHeight="569.0" prefWidth="753.0" style="-fx-background-color: #f4d04e;">
+    <TableView fx:id="mytable" layoutX="6.0" layoutY="226.0" prefHeight="117.0" prefWidth="397.0" style="-fx-border-color: #1d997f; -fx-background-color: #d8d8d8;">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="74.0" text="id" />
+            <TableColumn fx:id="col_tele" prefWidth="110.0" text="Telephone" />
+            <TableColumn fx:id="col_pre" prefWidth="114.0" text="Prenom" />
+            <TableColumn fx:id="col_nom" prefWidth="96.0" text="Nom" />
+        </columns>
+    </TableView>
+    <TableView fx:id="mytableP" layoutX="6.0" layoutY="72.0" prefHeight="117.0" prefWidth="397.0" style="-fx-border-color: #1d997f; -fx-background-color: #d8d8d8;">
+        <columns>
+            <TableColumn fx:id="col_idP" prefWidth="77.0" text="Id" />
+            <TableColumn fx:id="col_nomP" prefWidth="93.0" text="Nom" />
+            <TableColumn fx:id="col_descp" prefWidth="111.0" text="Descreption" />
+            <TableColumn fx:id="col_prixP" prefWidth="112.0" text="prix" />
+        </columns>
+    </TableView>
+
+    <Button fx:id="saveCommandeBtn" layoutX="269.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleSaveCommandeBtn" prefHeight="49.0" prefWidth="122.0" style="-fx-background-color: #1d997f;" text="Save Commande">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="86.0" fitWidth="74.0" layoutX="-31.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pics/images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="94.0" layoutX="278.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pics/cmd.png" />
+         </image>
+      </ImageView>
+      <Text fill="#1b7560" layoutX="33.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commandes" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnBck" layoutX="-10.0" layoutY="488.0" mnemonicParsing="false" onAction="#onbtnBck" prefHeight="67.0" prefWidth="66.0" style="-fx-background-radius: 50; -fx-background-color: #1d997f;" text="BACK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="33.0" layoutY="41.0" prefHeight="21.0" prefWidth="319.0" text="1-Please choose  products that you want ">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="200.0" prefHeight="26.0" prefWidth="397.0" text="2-Please choose one of delivery person who is available">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="100.0" prefHeight="21.0" prefWidth="278.0" text="3-Enter the date for deliveration:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="date" layoutX="428.0" layoutY="131.0" prefHeight="33.0" prefWidth="240.0" promptText="date jj/mm/aa" />
+      <Label layoutX="424.0" layoutY="233.0" prefHeight="21.0" prefWidth="240.0" text="4-Enter the distance in Kilometers">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <TextField  fx:id="km" layoutX="428.0" layoutY="277.0" prefHeight="33.0" prefWidth="240.0" promptText="Km.." />
+</Pane>
+</VBox>
